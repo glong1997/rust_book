@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>缘起 - Rust 小册</title>
+        <title>函数、闭包与迭代器 - Rust 小册</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Rust小册.html">Rust 小册</a></li><li class="chapter-item expanded "><a href="../踏上新的征程/踏上新的征程.html"><strong aria-hidden="true">1.</strong> 踏上新的征程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../踏上新的征程/缘起.html" class="active"><strong aria-hidden="true">1.1.</strong> 缘起</a></li><li class="chapter-item expanded "><a href="../踏上新的征程/展望.html"><strong aria-hidden="true">1.2.</strong> 展望</a></li></ol></li><li class="chapter-item expanded "><a href="../语言构成/语言构成.html"><strong aria-hidden="true">2.</strong> 语言构成</a></li><li class="chapter-item expanded "><a href="../所有权系统/所有权系统.html"><strong aria-hidden="true">3.</strong> 所有权系统</a></li><li class="chapter-item expanded "><a href="../函数、闭包与迭代器/函数、闭包与迭代器.html"><strong aria-hidden="true">4.</strong> 函数、闭包与迭代器</a></li><li class="chapter-item expanded "><a href="../集合类型/集合类型.html"><strong aria-hidden="true">5.</strong> 集合类型</a></li><li class="chapter-item expanded "><a href="../结构化编程/结构化编程.html"><strong aria-hidden="true">6.</strong> 结构化编程</a></li><li class="chapter-item expanded affix "><a href="../参考文献.html">参考文献</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Rust小册.html">Rust 小册</a></li><li class="chapter-item expanded "><a href="../踏上新的征程/踏上新的征程.html"><strong aria-hidden="true">1.</strong> 踏上新的征程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../踏上新的征程/缘起.html"><strong aria-hidden="true">1.1.</strong> 缘起</a></li><li class="chapter-item expanded "><a href="../踏上新的征程/展望.html"><strong aria-hidden="true">1.2.</strong> 展望</a></li></ol></li><li class="chapter-item expanded "><a href="../语言构成/语言构成.html"><strong aria-hidden="true">2.</strong> 语言构成</a></li><li class="chapter-item expanded "><a href="../所有权系统/所有权系统.html"><strong aria-hidden="true">3.</strong> 所有权系统</a></li><li class="chapter-item expanded "><a href="../函数、闭包与迭代器/函数、闭包与迭代器.html" class="active"><strong aria-hidden="true">4.</strong> 函数、闭包与迭代器</a></li><li class="chapter-item expanded "><a href="../集合类型/集合类型.html"><strong aria-hidden="true">5.</strong> 集合类型</a></li><li class="chapter-item expanded "><a href="../结构化编程/结构化编程.html"><strong aria-hidden="true">6.</strong> 结构化编程</a></li><li class="chapter-item expanded affix "><a href="../参考文献.html">参考文献</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,23 +134,15 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="缘起"><a class="header" href="#缘起">缘起</a></h2>
-<p>性能当道的时代，造就了C++。但是这些语言内存安全问题上，让人无比头疼。</p>
-<p>如果用谷歌或者百度翻译，Rust的中文字义应该是<code>铁锈</code>或者<code>(植物的)锈病; 锈菌</code>。Rust还可以是Robust和Trust的缩写。我个人更喜欢这个解释，Rust拥有超高的鲁棒性和信任感。</p>
-<p>Rust不光拥有强大的性能，其核心亮点更是安全，内存安全，线程安全。</p>
-<pre><pre class="playground"><code class="language-rust editable">fn main() {
-   println!(&quot;安全，安全，还是安全！&quot;);
-}
-</code></pre></pre>
-
+                        
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../踏上新的征程/踏上新的征程.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../所有权系统/所有权系统.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../踏上新的征程/展望.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../集合类型/集合类型.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -159,10 +151,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../踏上新的征程/踏上新的征程.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../所有权系统/所有权系统.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../踏上新的征程/展望.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../集合类型/集合类型.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

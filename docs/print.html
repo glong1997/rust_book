@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="Rust小册.html">Rust 小册</a></li><li class="chapter-item expanded "><a href="踏上新的征程/踏上新的征程.html"><strong aria-hidden="true">1.</strong> 踏上新的征程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="踏上新的征程/缘起.html"><strong aria-hidden="true">1.1.</strong> 缘起</a></li></ol></li><li class="chapter-item expanded "><a href="所有权系统/所有权系统.html"><strong aria-hidden="true">2.</strong> 所有权系统</a></li><li class="chapter-item expanded affix "><a href="参考文献.html">参考文献</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="Rust小册.html">Rust 小册</a></li><li class="chapter-item expanded "><a href="踏上新的征程/踏上新的征程.html"><strong aria-hidden="true">1.</strong> 踏上新的征程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="踏上新的征程/缘起.html"><strong aria-hidden="true">1.1.</strong> 缘起</a></li><li class="chapter-item expanded "><a href="踏上新的征程/展望.html"><strong aria-hidden="true">1.2.</strong> 展望</a></li></ol></li><li class="chapter-item expanded "><a href="语言构成/语言构成.html"><strong aria-hidden="true">2.</strong> 语言构成</a></li><li class="chapter-item expanded "><a href="所有权系统/所有权系统.html"><strong aria-hidden="true">3.</strong> 所有权系统</a></li><li class="chapter-item expanded "><a href="函数、闭包与迭代器/函数、闭包与迭代器.html"><strong aria-hidden="true">4.</strong> 函数、闭包与迭代器</a></li><li class="chapter-item expanded "><a href="集合类型/集合类型.html"><strong aria-hidden="true">5.</strong> 集合类型</a></li><li class="chapter-item expanded "><a href="结构化编程/结构化编程.html"><strong aria-hidden="true">6.</strong> 结构化编程</a></li><li class="chapter-item expanded affix "><a href="参考文献.html">参考文献</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,19 +150,18 @@
     println!(&quot;请随意编辑并运行&quot;);
 }
 </code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rust缘起"><a class="header" href="#rust缘起">Rust缘起</a></h1>
-<p>如果用谷歌或者百度翻译，Rust的中文字义应该是<code>铁锈</code>或者<code>(植物的)锈病; 锈菌</code>。Rust还可以是Robust和Trust的缩写。我个人更喜欢这个解释，Rust拥有超高的鲁棒性和信任感。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="踏上新的征程"><a class="header" href="#踏上新的征程">踏上新的征程</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="缘起"><a class="header" href="#缘起">缘起</a></h2>
-<pre><pre class="playground"><code class="language-rust editable"><span class="boring">fn main() {
-</span>    let x = 5;
-    let y = 6;
-
-    println!(&quot;{}&quot;, x + y);
-<span class="boring">}
-</span></code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="所有权系统"><a class="header" href="#所有权系统">所有权系统</a></h1>
+<p>性能当道的时代，造就了C++。但是这些语言内存安全问题上，让人无比头疼。</p>
+<p>如果用谷歌或者百度翻译，Rust的中文字义应该是<code>铁锈</code>或者<code>(植物的)锈病; 锈菌</code>。Rust还可以是Robust和Trust的缩写。我个人更喜欢这个解释，Rust拥有超高的鲁棒性和信任感。</p>
+<p>Rust不光拥有强大的性能，其核心亮点更是安全，内存安全，线程安全。</p>
+<pre><pre class="playground"><code class="language-rust editable">fn main() {
+   println!(&quot;安全，安全，还是安全！&quot;);
+}
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="所有权系统"><a class="header" href="#所有权系统">所有权系统</a></h1>
 <p>s</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="参考文献"><a class="header" href="#参考文献">参考文献</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="参考文献"><a class="header" href="#参考文献">参考文献</a></h1>
 <ol>
 <li><a href="https://rust.bootcss.com/#rust-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80">Rust 程序设计语言</a></li>
 <li><a href="https://www.bookstack.cn/books/rustonomicon_zh-CN">Rust死灵书 - Rust高级与非安全程序设计</a></li>
@@ -183,6 +182,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
