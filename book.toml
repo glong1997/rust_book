@@ -1,0 +1,22 @@
+[book]
+title = "Rust 小册子"
+authors = ["glong1997"]
+language = "cn"
+multilingual = false
+src = "src"
+
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[preprocessor.index]
+
+[preprocessor.links]
+
+
+[output.html.search]
+limit-results = 15
+
+[output.html.playpen]
+editable = true
