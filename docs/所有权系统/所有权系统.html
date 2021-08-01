@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>缘起 - Rust 小册</title>
+        <title>所有权系统 - Rust 小册</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Rust小册.html">Rust 小册</a></li><li class="chapter-item expanded "><a href="../踏上新的征程/踏上新的征程.html"><strong aria-hidden="true">1.</strong> 踏上新的征程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../踏上新的征程/缘起.html" class="active"><strong aria-hidden="true">1.1.</strong> 缘起</a></li></ol></li><li class="chapter-item expanded "><a href="../所有权系统/所有权系统.html"><strong aria-hidden="true">2.</strong> 所有权系统</a></li><li class="chapter-item expanded affix "><a href="../参考文献.html">参考文献</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Rust小册.html">Rust 小册</a></li><li class="chapter-item expanded "><a href="../踏上新的征程/踏上新的征程.html"><strong aria-hidden="true">1.</strong> 踏上新的征程</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../踏上新的征程/缘起.html"><strong aria-hidden="true">1.1.</strong> 缘起</a></li></ol></li><li class="chapter-item expanded "><a href="../所有权系统/所有权系统.html" class="active"><strong aria-hidden="true">2.</strong> 所有权系统</a></li><li class="chapter-item expanded affix "><a href="../参考文献.html">参考文献</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,23 +134,17 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="缘起"><a class="header" href="#缘起">缘起</a></h2>
-<pre><pre class="playground"><code class="language-rust editable"><span class="boring">fn main() {
-</span>    let x = 5;
-    let y = 6;
-
-    println!(&quot;{}&quot;, x + y);
-<span class="boring">}
-</span></code></pre></pre>
+                        <h1 id="所有权系统"><a class="header" href="#所有权系统">所有权系统</a></h1>
+<p>s</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../踏上新的征程/踏上新的征程.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../踏上新的征程/缘起.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../所有权系统/所有权系统.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../参考文献.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -159,30 +153,16 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../踏上新的征程/踏上新的征程.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../踏上新的征程/缘起.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../所有权系统/所有权系统.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../参考文献.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
